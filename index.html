@@ -1,0 +1,407 @@
+<!doctype html>
+<html lang="en" data-bs-theme="bg-white">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MR lines</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  </head>
+
+  <body>
+    
+
+       <div class="wrapper w-100 d-flex flex-column align-items-center">
+        <header class="header  w-100  container position-relaitve d-flex flex-column ">
+            <img class="img-fluid position-absolute top-0  start-50 header-image " src="./images/img/Фон.png" alt="header-image">
+            <nav class=" navbar container position-fixed navbar-expand-lg navbar-light   z-1 border-bottom border-white  ">
+                <div class="w-100  d-lg-flex justify-content-between">
+                    <div class=" d-flex flex-row justify-content-between w-100">
+
+                        <div class="d-flex flex-column flex-sm-row w-100">
+                            <div class="d-flex justify-content-between">
+
+                                <img class=" navbar-brand site-icon site-logo " src="./images/logo/Лого.svg" alt="logo">
+                                <div class="nav-button d-sm-none">
+                                    
+                                    <button class="  navbar-toggler collapsed burger-menu" id="button" onclick="myFunction()" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                        <span class="navbar-toggler-icon"></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-sm-column flex-row justify-content-around">
+                                <a class="font-size-base text-light" href="tel:+375(29) 135-10-20">+375(29) 135-10-20</a>
+                                <a class="font-size-base text-light" href="tel:+375(29) 765-10-20">+375(29) 765-10-20</a>
+                            </div>
+                        </div>
+                        <div class="nav-button d-sm-block d-none ">
+
+                            <button class="  navbar-toggler collapsed burger-menu" id="button" onclick="myFunction()" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="navbar-collapse collapse nav-links px-2  " id="navbarSupportedContent" >
+                        <ul class="navbar-nav   ">
+                            <li class="nav-item">
+                                <a class="nav-link text-light " href="#turi">
+                                    Туры           
+                                </a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link text-light" href="#bilet">
+                                    Билеты  
+                                </a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link text-light" href="#vizi">
+                                    Визы
+                                </a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link text-light nav-pad" href="#kompaniya">
+                                    О компании
+                                </a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link text-light" href="#kontakt">
+                                    Контакты
+                                </a>
+                            </li>
+                            <li class="tel-icon  ">
+                                <img class="rounded-circle p-2 bg-warning" src="./images/logo/icons8_phone_50px 1.svg" alt="tel">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class=" navbar-bottom ">
+                <div class="mt-lg-5 mt-0"></div>
+                    <div class="text-light">Будапешт – Белград ,  Белград  - Будапешт</div>
+                    <div class="text-light d-flex align-items-center gap-4"><h1 class="font-weight-bolder h1-font-size text-uppercase fs-md-h1 fs-h3">Мифы древней Греции</h1><span class="bg-danger py-1 px-3 h6-font-size font-weight-normal h-50 header-span d-flex justify-content-center align-items-center">Акция</span></div>
+                    <div class="text-dark mt-3 header-infos d-flex flex-wrap ">
+                        <span class="fw-lighter py-1 px-3">7 дней</span>
+                        <span class="fw-lighter py-1 px-3">Латвия</span>
+                        <span class="fw-lighter py-1 px-3">Швеция</span>
+                        <span class="fw-lighter py-1 px-3 mt-md-0 mt-1">Финляндия</span>
+                        <span class="fw-lighter py-1 px-3 mt-md-0 mt-1">Тип транспорта: Автобус + круиз</span>
+                    </div>
+                    <div class="text-light mt-5 d-flex header-bottom-money flex-wrap ">
+                        <div class="header-card d-flex flex-column align-items-center justify-content-center bg-white">
+                            <a href="#" class="btn text-light px-4 py-1 btn-header-card" >Забронировать от</a>
+                            <div class="text-dark mt-1">269 BYN <span class="header-card-span bg-white ms-3">≈96 EUR</span></div>
+                        </div>
+                        <div class="d-flex flex-wrap align-items-center header-bottom-money-bottom">
+                            <div class="fw-lighter d-flex align-items-center justify-content-center header-card-btn ">Обратный звонок</div>
+                            <div class="fw-lighter d-flex align-items-center justify-content-center header-card-btn header-card-btn-2">Распечатать программу </div>
+                        </div>
+                    </div>
+                    <div class="text-light ">
+                        <div class="text-light mt-5">Даты выезда:</div>
+                        <div class="kalendar overflow-hidden mt-3 col-lg-6 col-12">
+                            <div class="kalendar-top h-50 kalendar-top-right-line text-dark d-flex align-items-center ">                                         
+                                <span class="">ЯНВ </span>
+                                <span class="kalendar-top-left-line">ФЕВ </span>
+                                <span>МАР</span>
+                                <span class="kalendar-top-left-line">АПР</span>
+                                <span class="kalendar-top-left-line">МАЙ</span>
+                                <span class="kalendar-top-left-line">ИЮНЬ</span>
+                                <span class="kalendar-top-left-line">ИЮЛЬ</span>
+                                <span class="kalendar-top-left-line">АВГ</span>
+                                <span class="kalendar-top-left-line">СЕНТ</span>
+                                <span class="kalendar-top-left-line">ОКТ</span>
+                            </div>
+                            <div class="kalendar-bottom d-flex align-items-center h-50 ">
+                                <span class="ms-2">01</span>      <span class="ms-3">08</span>       <span class="ms-3">12</span>        <span class="ms-3">14</span>      <span class="kalendar-bottom-bold-span ms-3">18</span>     <span class="ms-3">21</span>      <span class="ms-3">22</span>      <span class="ms-3">25 </span>     <span class="ms-3">27</span>       <span class="ms-3">28</span>       <span class="ms-3">29</span>                                        
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </header>
+        <div class="main-nav text-dark  mt-5 py-3 container-fluid">
+            <div class="main-nav-in container">            
+                <span class="text-primary-emphasis border-bottom border-2 border-primary py-md-3 py-0">Описание</span>
+                <span class="ms-4 ">Стоимость</span>                                                
+                <span class="ms-4">Программа</span>
+                <span class="ms-4">Дополнительно </span>
+                <span class="ms-4">Галерея</span>
+                <span class="ms-4"> Отзывы</span></div>
+        </div>
+        <main class="main container-fluid  bg-white">
+            <div class="container d-flex justify-content-between">
+                <main class="main-in-left col-sm-8 mt-5 bg-white">
+                    <div class="text-dark">
+                        <p>
+                            Общее описание тура, буквально несколько абзацев про то как все круто, красиво и еще много всякой полезной информации, которую пользователи прочитают в первую очередь. Seamlessly drive extensible platforms without cooperative vortals. Conveniently drive professional results with multimedia based bandwidth. Completely expedite enterprise leadership and transparent meta-services. Continually synthesize state of the art e-services before client-based technology. Conveniently plagiarize accurate ideas without bleeding-edge channels.
+                            <br><br><br>Distinctively syndicate excellent intellectual capital whereas professional partnerships. Interactively syndicate best-of-breed niche markets after an expanded array of collaboration and idea-sharing. Competently conceptualize multifunctional processes after strategic quality vectors. Authoritatively evisculate interactive partnerships whereas unique value. Dynamically reconceptualize leveraged outsourcing after inexpensive best practices.
+                        </p>
+                    </div>
+                    <div><img class="img-fluid mt-4 " src="./images/img/image.png" alt="img"></div>
+                    <div class=" bg-white mt-5 ">
+                        <div class="d-flex align-items-center bg-white klient-infos" >
+                            <div class="img-fluid d-none d-lg-block"><img src="./images/img/621303-PNUBVO-58 1.png" alt="img"></div>
+                            <div class="pt-5">
+                                <h4 class="text-light ">Хотите получить лучшую цену на этот тур?</h4>
+                                <h6 class="text-light ">Введите номер своего телефона. Мы 
+                                    ВАМ ПЕРЕЗВОНИМ</h6>
+                                    <div class="ms-4 ms-lg-0">
+                                        <input class="col-8 bg-white p-2  border btn" type="tel" value="+375 (29) 690 - 10 - 34">
+                                        <div class="btn btn-warning p-2 text-light ">Перезвоните мне</div>    
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="mt-5 h2">Фото</div>
+                        <div class="d-flex mt-5">
+                            <img class="col-3" src="./images/img/foto/Group 5.png" alt="img">
+                            <img class="col-2" src="./images/img/foto/Group 6.png" alt="img">
+                            <img class="col-2" src="./images/img/foto/Group 7.png" alt="img">
+                            <img class="col-2" src="./images/img/foto/Group 8.png" alt="img">
+                            <div class="border border-3 border-primary rounded col-3 d-flex align-items-center justify-content-center text-primary-emphasis">еще 35 фото</div>
+                        </div>
+                    </div>
+                    <h2 class="my-5">О туре</h2>
+                    <div class="ture d-flex">
+                        <div class="d-flex flex-column">
+
+                            <div class="">
+ 
+                                   <b> 1 ДЕНЬ</b>	<br>
+                                
+                                <br><b> 4:00</b>     	  ПЛОЩАДЬ КАЛИНИНА, ОТПРАВЛЕНИЕ В РИГУ
+                                <br><b>8:00</b>     ПЕРЕСЕЧЕНИЕ ГРАНИЦЫ (БЕЛАРУСЬ-ЛИТВА)
+                                <br><b>13:00</b> 	   ПРИБЫТИЕ В РИГУ, ЭКСКУРСИЯ ПО ГОРОДУ
+                                <br><b>16:00</b>    	ВЫЕЗД В ПОРТ, ПОГРУЗКА НА КОРАБЛЬ
+                                <br><b>17:30</b>    	ОТПРАВЛЕНИЕ В СТОКГОЛЬМ
+                                <br><b>17:30</b> 	   УЖИН НА КОРАБЛЕ <span class="text-danger">(доп оплата)</span>.</div>
+                            <div class="">
+                                <b>3 ДЕНЬ</b>  <br>	
+
+                                <br><b>6:00</b> 	     ЗАВТРАК НА КОРАБЛЕ <span class="text-danger">(доп оплата)</span>
+                                <br><b>7:00</b> 	     ПРИБЫТИЕ В ТУРКУ
+                                <br><b>7:30</b> 	     ЭКСКУРСИЯ ПО ГОРОДУ
+                                <br><b>9:00</b> 	     ПЕРЕЕЗД В ХЕЛЬСИНКИ
+                                <br><b>11:00</b> 	   ЭКСКУРСИЯ ПО ГОРОДУ
+                                <br><b>13:00</b> 	   СВОБОДНОЕ ВРЕМЯ (ПОСЕЩЕНИЕ ПАРКОВ, МУЗЕЕВ<span class="text-danger">(доп оплата)</span>)
+                                <br><b>17:30</b> 	   ВЫЕЗД В ПОРТ, ПОГРУЗКА НА КОРАБЛЬ
+                                <br><b>18:30</b>    	ОТПРАВЛЕНИЕ В ТАЛЛИНН
+
+
+                                <b>ПРИБЫТИЕ В МИНСК В 00:30-02:30м</b> 
+                            </div>
+                        </div>
+                        <div class="d-flex flex-column">
+                            <div class="">
+                                <div class="">
+ 
+                                    <b> 2 ДЕНЬ</b>	<br>
+                                 
+                                 <br><b> 4:00</b>     	  ПЛОЩАДЬ КАЛИНИНА, ОТПРАВЛЕНИЕ В РИГУ
+                                 <br><b>8:00</b>     ПЕРЕСЕЧЕНИЕ ГРАНИЦЫ (БЕЛАРУСЬ-ЛИТВА)
+                                 <br><b>13:00</b> 	   ПРИБЫТИЕ В РИГУ, ЭКСКУРСИЯ ПО ГОРОДУ
+                                 <br><b>16:00</b>    	ВЫЕЗД В ПОРТ, ПОГРУЗКА НА КОРАБЛЬ
+                                 <br><b>17:30</b>    	ОТПРАВЛЕНИЕ В СТОКГОЛЬМ
+                                 <br><b>17:30</b> 	   УЖИН НА КОРАБЛЕ <span class="text-danger">(доп оплата)</span>
+                            </div>
+                            <div class="">
+                                <b>4 ДЕНЬ</b>  <br>	
+
+                                <br><b>6:00</b> 	     ЗАВТРАК НА КОРАБЛЕ <span class="text-danger">(доп оплата)</span>
+                                <br><b>7:00</b> 	     ПРИБЫТИЕ В ТУРКУ
+                                <br><b>7:30</b> 	     ЭКСКУРСИЯ ПО ГОРОДУ
+                                <br><b>9:00</b> 	     ПЕРЕЕЗД В ХЕЛЬСИНКИ
+                            </div>
+                        </div>
+                        </div>
+                    </div>    
+                    <h2 class="my-5">Ближайшие выезды</h2>
+                    <div class="gap-10 d-flex flex-column">
+                        <div class="d-flex flex-wrap align-items-center justify-content-between border-bottom">
+                            <div>с <b>20.08.2018</b>  по <b>25.08.2018</b>  (+ Завтрак + Шоу-программа тигров)</div>
+                            <div class="d-flex align-items-center">
+                                <div>от <b>380 BYN</b> <span class="text-danger me-3">(~130 EUR)</span> </div>
+                                <div class="btn btn-primary">Забронировать</div>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-wrap align-items-center justify-content-between border-bottom">
+                            <div>с <b>20.08.2018</b>  по <b>25.08.2018</b>  (+ Завтрак + Шоу-программа тигров)</div>
+                            <div class="d-flex align-items-center">
+                                <div>от <b>380 BYN</b> <span class="text-danger me-3">(~130 EUR)</span> </div>
+                                <div class="btn btn-primary">Забронировать</div>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-wrap align-items-center justify-content-between border-bottom">
+                            <div>с <b>20.08.2018</b>  по <b>25.08.2018</b>  (+ Завтрак + Шоу-программа тигров)</div>
+                            <div class="d-flex align-items-center">
+                                <div>от <b>380 BYN</b> <span class="text-danger me-3">(~130 EUR)</span> </div>
+                                <div class="btn btn-primary">Забронировать</div>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-wrap align-items-center justify-content-between border-bottom">
+                            <div>с <b>20.08.2018</b>  по <b>25.08.2018</b>  (+ Завтрак + Шоу-программа тигров)</div>
+                            <div class="d-flex align-items-center">
+                                <div>от <b>380 BYN</b> <span class="text-danger me-3">(~130 EUR)</span> </div>
+                                <div class="btn btn-primary">Забронировать</div>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-wrap align-items-center justify-content-between ">
+                            <div>с <b>20.08.2018</b>  по <b>25.08.2018</b>  (+ Завтрак + Шоу-программа тигров)</div>
+                            <div class="d-flex align-items-center">
+                                <div>от <b>380 BYN</b> <span class="text-danger me-3">(~130 EUR)</span> </div>
+                                <div class="btn btn-primary">Забронировать</div>
+                            </div>
+                        </div>
+                    </div>
+                    <h2 class="my-4">В стоимость тура входит:</h2>
+                    <div>
+                        - проезд на комфортабельном автобусе компании VRLines <br>
+                        - обзорные экскурсии по всем городам<br>
+                        - ночевка на круизном лайнере<br>
+                        - завтрак на круизном найнере<br>
+                        - массаж головы при проезде в автобусе<br>
+                        - гарнитура на время проведения экскурсий
+                    </div>
+                    <h2 class="my-4">Дополнительно можно приобрести:</h2>
+                    <div>
+                        - посещение музея 380 BYN ( <span class="text-danger">~153 EUR</span> )<br>
+                        - проезд на велорикше 380 BYN (<span class="text-danger">~153 EUR</span>)<br>
+                        - фото со звездой 380 BYN (<span class="text-danger">~153 EUR</span>)<br>
+                        - ужин в ресторане Buffet 380 BYN (<span class="text-danger">~153 EUR</span>)<br>
+                        - посещение спа на борту лайнера 380 BYN (<span class="text-danger">~153 EUR</span>)<br>
+                        - фотография с обезьянкой 380 BYN (<span class="text-danger">~153 EUR</span>)
+                    </div>
+                    <h2 class="my-4">Отзывы пользователей</h2>
+                    <div>
+                        <div class="comment p-3 me-md-5 ">26.08.2018, <b>Алла Пугачева:</b><br> Title
+                            Synergistically evolve sustainable imperatives whereas market-driven technologies. Interactively maintain compelling expertise after optimal supply chains. Collaboratively disseminate cooperative action items before customer directed functionalities. Assertively supply competitive human capital through standards compliant resources. Quickly integrate excellent meta-services through top-line results.
+                        </div>
+                        <div class="comment p-3 ms-md-5 mt-5">26.08.2018, <b>Алла Пугачева:</b><br> Title
+                            Synergistically evolve sustainable imperatives whereas market-driven technologies. Interactively maintain compelling expertise after optimal supply chains. Collaboratively disseminate cooperative action items before customer directed functionalities. Assertively supply competitive human capital through standards compliant resources. Quickly integrate excellent meta-services through top-line results.
+                        </div>
+                    </div>
+                    <h2 class="my-4">Оставить отзыв</h2>
+                    <div class="d-flex align-items-start mb-3">
+                        <p class="me-5">Рейтинг:</p>
+                        <img class="" src="./images/logo/Group 36.svg" alt="img">
+                    </div>
+                    <div class="d-flex">
+                        <input class="col-6 border-primary rounded p-2" type="text" value="name">
+                        <input class="col-6 border-primary rounded p-2 ms-4" type="email" value="e-mail">
+                    </div>
+                    <div>
+                        <input class="border-primary rounded  mt-4 col-12 comment-me d-flex " type="text" >
+                    </div>
+                    <div class="mt-3"><img src="./images/img/Google-updates-captcha 1.png" alt="robot"></div>
+                    <h2 class="my-5">Полезное</h2>
+                    <div class="d-flex align-items-center mb-5">
+                        <ul class="me-3">
+                            <li class="text-primary-emphasis">Визы</li>
+                            <li class="text-primary-emphasis">FAQ</li>
+                            <li class="text-primary-emphasis">Необходимые документы</li>
+                            <li class="text-primary-emphasis">Разрешения на выезд</li>
+                            <li class="text-primary-emphasis">Прививки</li>
+                            <li class="text-primary-emphasis">Теплые вещи</li>
+                        </ul>
+                        <div class="btn btn-primary ms-4">Написать отзыв</div>
+                    </div>
+                    <div class="d-flex flex-lg-row flex-column">
+                        <div class="d-flex col-6   align-items-start ">
+                            <div class="">
+                                <div class="h4  mb-3">Паром из Таллинна
+                                    в Хельсинки.</div>
+                                <div>В 2018-м году, выбирая вариант отдыха,  а приобрести что-то...</div>
+                            </div>
+                            <div><img class="ms-4" src="./images/img/imge3.png" alt=""></div>
+                        </div>
+                        <div class="d-flex col-6   align-items-start ms-2">
+                            <div class="">
+                                <div class="h4  mb-3">Дешевые туры 
+                                    по Европе</div>
+                                <div>В 2018-м году, выбирая вариант отдыха,  а приобрести что-то...</div>
+                            </div>
+                            <div><img class="ms-4" src="./images/img/image 2.png" alt=""></div>
+                        </div>
+                    </div>
+                </main>
+                <main class="main-in-right col-3 mt-5 d-none d-sm-block">
+                    <a class="text-decoration-underline" href="#">
+                        Лайнер <b>BALTIC QUEEN</b>
+                    </a>
+                    <div class="mt-3 mb-3">
+                        <img class="img-fluid" src="./images/img/TS_ships_BalticQueen_016_Rietz.png" alt="img">
+                    </div>
+                    <a class="text-decoration-underline " href="#">Развлечения, Ресторан, Магазины, Детям, Каюты, Спа-комплекс, Конференции, Прочее, Технические данные</a>
+                    <div class="text-dark mt-4">
+                        Страны:<a href="#" class="text-decoration-underline"> Литва, Латвия, Швеция, Финляндия</a>
+                    </div>
+                    <div class="text-dark mt-4 ">
+                        Города:<a href="#" class="text-decoration-underline"> Таллинн, Рига, Стокгольм, Хельсинки, Турку</a>    
+                    </div>
+                    <div class="main-infos mt-5 text-dark d-none d-lg-block">
+                        ОTПPABЛEНИE
+                        <div class="main-infos-datas mt-4">
+                            <div class="main-infos-data p-2 d-flex justify-content-between align-items-center border border-secondary">
+                                <div>C <span>15.09.2018</span></div>
+                                <div><img src="./images/logo/calendar.svg" alt="img"></div>
+                            </div>
+                            <div class="main-infos-data p-2 d-flex justify-content-between align-items-center border border-secondary mt-3">
+                                <div>По <span>15.09.2018</span></div>
+                                <div><img src="./images/logo/calendar.svg" alt="img"></div>
+                            </div>
+                        </div>
+                        <div class="btn btn-warning mt-5 px-md-5 py-md-2 px-3 py-1">подобрать тур</div>
+                    </div>
+                </main>
+            </div>
+        </main>
+        <footer class="d-flex flex-column mt-5">
+            <div class="d-flex flex-wrap  justify-content-between">
+                <div class="d-flex flex-column col-1"><b>Туры</b><a href="#">Рига-Таллинн-Стокгольм
+                    Латвия-Литва-Норвегия
+                    </a>
+                </div>
+                <div class="d-flex flex-column col-1"><b>Экскурсии</b><a href="#">Какойто Вильнус
+                    Рига тайм
+                    Стокгольм Лайв
+                    Хельсинки One Love
+                    Таллинн и пр.
+                    Ночная Барселона
+                    Исламский Берлин</a></div>
+                <div class="d-flex flex-column col-1"><b>Страны</b><a href="#">Литва
+                    Латвия
+                    Швеция
+                    Финляндия
+                    Дания
+                    Германия
+                    Испания</a></div>
+                <div class="d-flex flex-column col-1"><b>Города</b><a href="#">Вильнус
+                    Рига
+                    Стокгольм
+                    Хельсинки
+                    Таллинн
+                    Барселона
+                    Берлин</a></div>
+                <div >Беларусь, г. Минск, ул. Калинина 3 <br>
+                    <br>
+                    + 375 17 399-99-23 <br>
+                    + 375 29 765-10-20 <br>
+                    + 375 29 135-10-20<br>
+                    <br>
+                    ИТТУП «ВиАрЛайнс» УНН 190810067</div>
+            </div>
+            <div></div>
+        </footer>
+       </div>
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+
+
